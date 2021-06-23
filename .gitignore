@@ -95,6 +95,7 @@ src/_includes/css
 .styleintrc
 .stylelintrc.json
 *.todo
+notes.md
 
 # Misc
 *.log
