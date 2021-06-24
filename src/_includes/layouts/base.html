@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>{{ title }}</title>
+    <!-- <link rel="" href="" /> -->
+    <!-- <script defer src=""></script> -->
+  </head>
+  <body class="center-content">
+    {% include "partials/site-head.html" %}
+
+    <main tabindex="-1" id="main-content">
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

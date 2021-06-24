@@ -1,24 +1,36 @@
 {
   "items": [
     {
-      "text": "Home",
-      "url": "/"
+      "text": "Mercury",
+      "url": "/planets/mercury/"
     },
     {
-      "text": "About",
-      "url": "/about-us/"
+      "text": "Venus",
+      "url": "planets/venus/"
     },
     {
-      "text": "Work",
-      "url": "/work/"
+      "text": "Earth",
+      "url": "planets/earth/"
     },
     {
-      "text": "Blog",
-      "url": "/blog/"
+      "text": "Mars",
+      "url": "planets/mars/"
     },
     {
-      "text": "Contact",
-      "url": "/contact/"
+      "text": "Jupiter",
+      "url": "/planets/jupiter/"
+    },
+    {
+      "text": "Saturn",
+      "url": "planets/saturn/"
+    },
+    {
+      "text": "Uranus",
+      "url": "planets/uranus/"
+    },
+    {
+      "text": "Neptune",
+      "url": "planets/neptune/"
     }
   ]
 }
