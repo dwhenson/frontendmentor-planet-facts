@@ -6,15 +6,15 @@
     },
     {
       "text": "Venus",
-      "url": "planets/venus/"
+      "url": "/planets/venus/"
     },
     {
       "text": "Earth",
-      "url": "planets/earth/"
+      "url": "/planets/earth/"
     },
     {
       "text": "Mars",
-      "url": "planets/mars/"
+      "url": "/planets/mars/"
     },
     {
       "text": "Jupiter",
@@ -22,15 +22,15 @@
     },
     {
       "text": "Saturn",
-      "url": "planets/saturn/"
+      "url": "/planets/saturn/"
     },
     {
       "text": "Uranus",
-      "url": "planets/uranus/"
+      "url": "/planets/uranus/"
     },
     {
       "text": "Neptune",
-      "url": "planets/neptune/"
+      "url": "/planets/neptune/"
     }
   ]
 }
