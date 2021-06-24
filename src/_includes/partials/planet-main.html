@@ -1,0 +1,13 @@
+  <div class="planet">
+    <article>
+      <h1>{{ title }}</h1>
+      <ol>
+        <li><button><h2>Overview</h2></button></li>
+        <li><button><h2>Internal Structure</h2></button></li>
+        <li><button><h2>Surface Geology</h2></button></li>
+      </ol>
+      <p>{{ overview.content }}</p>
+      <a href="{{ overview.source }}">Wikipedia</a>
+    </article>
+    <img src="{{ images.planet }}" alt="{{ title }}">
+  </div>

@@ -20,9 +20,7 @@ radius: "69,911 KM"
 temperature: "-108°c"
 
 images:
-  planet: "./assets/planet-jupiter.svg"
-  internal: "./assets/planet-jupiter-internal.svg"
-  geology: "./assets/geology-jupiter.png"
+  planet: "../../images/planet-jupiter.svg"
+  internal: "../../images/planet-jupiter-internal.svg"
+  geology: ".././images/geology-jupiter.png"
 ---
-
-A little test

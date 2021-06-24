@@ -1,7 +1,7 @@
 ---
 title: "Mercury"
 layout: "layouts/planet.html"
-permalink: "planets/mercury"
+permalink: "planets/mercury/"
 overview:
   content: "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth"
   source: "https://en.wikipedia.org/wiki/Mercury_(planet)"
@@ -19,9 +19,7 @@ revolution: "87.97 Days"
 radius: "2,439.7 KM"
 temperature: "430°c"
 images:
-  planet: "./assets/planet-mercury.svg"
-  internal: "./assets/planet-mercury-internal.svg"
-  geology: "./assets/geology-mercury.png"
+  planet: "../../images/planet-mercury.svg"
+  internal: "../../images/planet-mercury-internal.svg"
+  geology: "../../images/geology-mercury.png"
 ---
-
-Some more content

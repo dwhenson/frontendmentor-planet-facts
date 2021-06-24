@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-<article>
-  <h1>{{ title }}</h1>
-  {{ content | safe }}
-</article>
-{% endblock %}
+<main tabindex="-1" id="main-content" class="planet">
+  {% include "partials/planet-main.html" %}
+  {% include "partials/planet-details.html" %}
+</main>
+<!-- {% endblock %} -->

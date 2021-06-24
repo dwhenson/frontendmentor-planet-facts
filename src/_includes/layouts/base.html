@@ -11,9 +11,6 @@
   </head>
   <body class="center-content">
     {% include "partials/site-head.html" %}
-
-    <main tabindex="-1" id="main-content">
-      {% block content %}{% endblock %}
-    </main>
+    {% block content %}{% endblock %}
   </body>
 </html>
