@@ -1,19 +1,20 @@
 STEPS
 
-1. Partials
+<!-- 1. Partials -->
+<!-- - Base -->
+<!-- - Header -->
 
-- Base
-- Header
-- Navigation
 - Hamburger menu?
-- Footer
 
-2. Pages
+<!-- 2. Pages -->
 
-- From Data
-- Create planet collection
+- From front matter
+<!-- - Create planet collection -->
 
 3. Styling and SCSS
+
+-
+
 4. JS
 
 - Burger menu
