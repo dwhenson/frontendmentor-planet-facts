@@ -4,7 +4,7 @@ $max: 1440px;
 
 .center-content {
 	display: grid;
-	grid-template-rows: min-content;
+	grid-template-rows: auto 1fr auto;
 	grid-template-columns: minmax($min, 1fr) minmax($min, $max) minmax($min, 1fr);
 
 	& > * {

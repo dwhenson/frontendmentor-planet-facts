@@ -1,14 +1,29 @@
 /* Align flex children at small and large viewports */
 
-.split {
+.split-colToRow {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: calc(var(--spacer) * 2);
+	gap: 1rem;
 
 	@include respond-to("medium") {
 		flex-direction: row;
-		gap: calc(var(--spacer) * 4);
+	}
+
+	> * {
+		flex: 1;
+	}
+}
+
+.split-rowToCol {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+
+	@include respond-to("medium") {
+		flex-direction: column;
 	}
 
 	> * {

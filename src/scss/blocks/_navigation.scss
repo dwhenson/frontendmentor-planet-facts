@@ -1,5 +1,9 @@
 /* 	Navigation
    	================================================== */
+#temp {
+	display: flex;
+	outline: 1px solid white;
+}
 
 .site-head__inner {
 	display: flex;
@@ -53,8 +57,8 @@
 .burger-menu__bar::before,
 .burger-menu__bar::after {
 	position: absolute;
-	display: block;
 	left: 50%;
+	display: block;
 	width: 24px;
 	height: 3px;
 	border: 1px solid var(--clr-neutral-500);
@@ -85,9 +89,9 @@
 // Hamburger button size and positioning
 .burger-menu[enabled="true"] .burger-menu__trigger {
 	position: relative;
-	display: block;
 	left: calc(100% - 2rem);
 	z-index: 10;
+	display: block;
 	width: 2rem;
 	height: 2rem;
 	border: none;

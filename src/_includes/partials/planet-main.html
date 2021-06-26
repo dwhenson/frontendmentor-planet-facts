@@ -1,21 +1,22 @@
-<div class="planet">
-  <article class="flow-section">
-    <h1>{{ title }}</h1>
-    <ol role="list">
-      <li>
-        <a href="#overview"><h2>Overview</h2></a>
-      </li>
-      <li>
-        <a href="#internal"><h2>Internal Structure</h2></a>
-      </li>
-      <li>
-        <a href="surface"><h2>Surface Geology</h2></a>
-      </li>
-    </ol>
+<section class="[ planet ]">
+  <h1>{{ title }}</h1>
+  <ol class="split-rowToCol" role="list">
+    <li>
+      <a href="#overview"><h2>Overview</h2></a>
+    </li>
+    <li>
+      <a href="#internal"><h2>Structure</h2></a>
+    </li>
+    <li>
+      <a href="surface"><h2>Surface</h2></a>
+    </li>
+  </ol>
+  <div class="[ flow-content ] [ content ]">
     <p>{{ overview.content }}</p>
     <p class="source">
-      Source&nbsp;&nbsp;:&nbsp;&nbsp;<a href="{{ overview.source }}">Wikipedia</a>
+      Source&nbsp;&nbsp;:&nbsp;&nbsp;
+      <a href="{{ overview.source }}">Wikipedia</a>
     </p>
-  </article>
+  </div>
   <img src="{{ images.planet }}" alt="{{ title }}" />
-</div>
+</section>

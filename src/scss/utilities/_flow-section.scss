@@ -1,9 +1,9 @@
 /* Add vertical rhythm between sections */
 
 .flow-section > * + * {
-	margin-top: 1rem;
+	margin-top: 2rem;
 
 	@include respond-to("medium") {
-		margin-top: 2rem;
+		margin-top: 4rem;
 	}
 }
