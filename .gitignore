@@ -79,8 +79,6 @@ config.codekit3
 ## NODE MODULES AND OUTPUT
 .ntvs_analysis.dat
 node_modules/
-dist
-src/_includes/css
 
 ## Frontend Mentor Design files
 *.sketch
@@ -107,4 +105,7 @@ Thumbs.db
 .env
 .cache
 
+#11ty
+dist
+src/_includes/css
 
