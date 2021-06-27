@@ -1,36 +1,36 @@
-/* 	Custom Properties
-   	================================================== */
+/*  Custom Properties
+    ================================================== */
 
 :root {
-	/* General */
-	--alpha: 1;
-	--spacer: 1rem;
+  /* General */
+  --alpha: 1;
+  --spacer: 1rem;
 
-	/* Colors */
-	--clr-neutral-100: hsl(0, 0%, 100%);
-	--clr-neutral-200: hsl(240, 6%, 54%);
-	--clr-neutral-300: hsl(240, 17%, 26%);
-	--clr-neutral-400: hsl(233, 67%, 8%);
-	--clr-neutral-500: hsl(0, 0%, 0%);
+  /* Colors */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(240, 6%, 54%);
+  --clr-neutral-300: hsl(240, 17%, 26%);
+  --clr-neutral-400: hsl(233, 67%, 8%);
+  --clr-neutral-500: hsl(0, 0%, 0%);
 
-	/* Accents */
-	--home: hsl(0, 0%, 100%);
-	--earth: hsl(263, 67%, 51%);
-	--jupiter: hsl(10, 63%, 51%);
-	--mars: hsl(2, 68%, 53%);
-	--mercury: hsl(194, 48%, 49%);
-	--neptune: hsl(222, 87%, 56%);
-	--saturn: hsl(17, 73%, 46%);
-	--uranus: hsl(169, 73%, 44%);
-	--venus: hsl(33, 82%, 61%);
+  /* Accents */
+  --home: hsl(0, 0%, 100%);
+  --earth: hsl(263, 67%, 51%);
+  --jupiter: hsl(10, 63%, 51%);
+  --mars: hsl(2, 68%, 53%);
+  --mercury: hsl(194, 48%, 49%);
+  --neptune: hsl(222, 87%, 56%);
+  --saturn: hsl(17, 73%, 46%);
+  --uranus: hsl(169, 73%, 44%);
+  --venus: hsl(33, 82%, 61%);
 
-	/* Font sizes */
-	--step--1: clamp(0.6rem, 0.25vw + 0.6rem, 0.9rem);
-	--step-0: clamp(0.8rem, 0.25vw + 1rem, 1.2rem);
-	--step-1: clamp(2rem, 3vw + 1rem, 3.5rem);
-	--step-2: clamp(3rem, 3vw + 2.25rem, 5rem);
+  /* Font sizes */
+  --step--1: clamp(0.6rem, 0.25vw + 0.6rem, 0.9rem);
+  --step-0: clamp(0.8rem, 0.25vw + 1rem, 1.2rem);
+  --step-1: clamp(2rem, 3vw + 1rem, 3.5rem);
+  --step-2: clamp(3rem, 3vw + 2.25rem, 5rem);
 
-	/* Font-families */
-	--ff-body: "Spartan", sans-serif;
-	--ff-headers: "Antonio", sans-serif;
+  /* Font-families */
+  --ff-body: "Spartan", sans-serif;
+  --ff-headers: "Antonio", sans-serif;
 }
