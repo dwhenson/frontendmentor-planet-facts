@@ -1,6 +1,16 @@
 module.exports = (config) => {
   config.addPassthroughCopy("./src/images/");
 
+  // Disable browsersync
+  config.setBrowserSyncConfig({
+    snippetOptions: {
+      // Regex that will never match, so snippet never added.
+      rule: {
+        match: /no-such-element/,
+      },
+    },
+  });
+
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
