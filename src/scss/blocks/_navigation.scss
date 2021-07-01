@@ -2,41 +2,33 @@
    	================================================== */
 .site-head__inner {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	gap: 2rem;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	margin-top: 2rem;
+	color: var(--clr-neutral-100);
+
+	@include respond-to("large") {
+		flex-direction: row;
+	}
+
+	> a {
+		font-family: var(--ff-headers);
+		font-size: var(--step-1);
+	}
+
+	a {
+		color: var(--clr-neutral-100);
+	}
 
 	burger-menu .navigation ul {
 		display: flex;
+		justify-content: center;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 2rem;
-
-		li {
-			position: relative;
-		}
-	}
-
-	a:not(.cta) {
-		font-weight: 700;
-		color: var(--clr-neutral-400);
-	}
-
-	a:not(.cta):hover {
-		color: var(--clr-neutral-300);
-	}
-
-	.cta {
-		display: none;
-
-		@include respond-to("large") {
-			display: inline-block;
-		}
+		gap: 1.5rem;
 	}
 }
 
