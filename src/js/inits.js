@@ -1,7 +1,15 @@
+/* ====================================================
+   Variables
+   ==================================================== */
 const contents = [...document.querySelectorAll("[data-content]")];
 const buttons = [...document.querySelectorAll("[data-button]")];
 const sources = [...document.querySelectorAll("[data-source]")];
 
+/* ====================================================
+   Functions
+   ==================================================== */
+/* App
+/* ==================================================== */
 /**
  * Updates the page content based on the button clicked
  * @param      {event}  event   The event
@@ -63,6 +71,7 @@ function updateButtons(event, array) {
  */
 function handleClicks(event) {
 	if (!event.target.closest("[data-button]")) return;
+	event.preventDefault();
 	updateButtons(event, buttons);
 	updateContent(event, contents);
 	updateSources(event, sources);

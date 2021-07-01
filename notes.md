@@ -26,22 +26,22 @@
 ## JS
 
 -  Burger menu
-
--  Buttons and content
+-  Buttons and content depending on viewport
    UP-NEXT
    Inits
-   -  Set all hidden text wtih JS - content and sources
-   -  Show first item in each array and add active class to button
-   -  Change link to a role of button?
-      App
-   -  Create updateContent function to hide/show as requried
-   -  Add comments to all sections
-   -  Refactor for common approach to locate target item in array
+   <!-- -  Set all hidden text wtih JS - content and sources -->
+   <!-- -  Show first item in each array and add active class to button -->
+   <!-- -  Change link to a role of button? -->
+         <!-- App -->
+      <!-- -  Create updateContent function to hide/show as requried -->
+      <!-- -  Add comments to all sections -->
+      <!-- -  Refactor for common approach to locate target item in array -->
 
 # FIXME
 
 -  Text wrapping on bottom flex
 -  Different text on buttons/viewport
+-  Source looks bad if JS fails
    <!-- -  Separator is on top of underline in mobile view -->
    <!-- -  Border causing jank on mobile links, and impacted by border radius -->
 

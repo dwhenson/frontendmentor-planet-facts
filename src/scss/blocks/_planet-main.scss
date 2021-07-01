@@ -73,7 +73,8 @@
     visibility: hidden;
   }
 
-  .content:target {
+  /* Fall back in case JS fails */
+  > .content:target {
     visibility: visible;
   }
 
