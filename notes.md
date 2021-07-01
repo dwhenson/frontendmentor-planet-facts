@@ -25,15 +25,22 @@
 
 ## JS
 
+UP-NEXT
+
 -  Burger menu
+
+   -  Alignment of icon
+   -  Expanded menu content, size positioning
+   -  Change App comment to main content under funcs
+   -  Add comments to focusable/Burger menu
+
 -  Buttons and content depending on viewport
-   UP-NEXT
-   Inits
-   <!-- -  Set all hidden text wtih JS - content and sources -->
+   <!-- Inits -->
+   <!-- -  Set all hidden text with JS - content and sources -->
    <!-- -  Show first item in each array and add active class to button -->
    <!-- -  Change link to a role of button? -->
          <!-- App -->
-      <!-- -  Create updateContent function to hide/show as requried -->
+      <!-- -  Create updateContent function to hide/show as required -->
       <!-- -  Add comments to all sections -->
       <!-- -  Refactor for common approach to locate target item in array -->
 
