@@ -17,7 +17,10 @@
 
     @include respond-to("medium") {
       padding-left: 1em;
-      border: 1px solid var(--clr-neutral-200);
+      border-top: 1px solid var(--clr-neutral-200);
+      border-right: 1px solid var(--clr-neutral-200);
+      border-bottom: 1px solid var(--clr-neutral-200);
+      border-left: 1px solid var(--clr-neutral-200);
       list-style-type: decimal-leading-zero;
       list-style-position: inside;
       color: var(--clr-neutral-200);
@@ -27,7 +30,10 @@
       border-bottom: 3px solid var(--accent, var(--clr-neutral-300));
 
       @include respond-to("medium") {
-        border: 1px solid var(--accent, var(--clr-neutral-300));
+        border-top: 1px solid var(--clr-neutral-200);
+        border-right: 1px solid var(--clr-neutral-200);
+        border-bottom: 1px solid var(--clr-neutral-200);
+        border-left: 1px solid var(--clr-neutral-200);
         background-color: var(--accent, var(--clr-neutral-300));
       }
     }
@@ -41,15 +47,17 @@
       display: inline-block;
       width: 90%;
       padding-left: 1em;
-      // max-width: 100%;
     }
   }
 
-  .active {
+  .js-active {
     border-bottom: 3px solid var(--accent, var(--clr-neutral-300));
 
     @include respond-to("medium") {
-      border-bottom: unset;
+      border-top: 1px solid var(--accent, var(--clr-neutral-300));
+      border-right: 1px solid var(--accent, var(--clr-neutral-300));
+      border-bottom: 1px solid var(--accent, var(--clr-neutral-300));
+      border-left: 1px solid var(--accent, var(--clr-neutral-300));
       background-color: var(--accent, var(--clr-neutral-300));
     }
   }
