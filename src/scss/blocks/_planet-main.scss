@@ -66,11 +66,11 @@
 
 .contents {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 
   > .content {
-    grid-area: 1 / 1 / 2 / -1;
     visibility: hidden;
+    grid-area: 1 / 1 / 2 / -1;
   }
 
   /* Fall back in case JS fails */
