@@ -4,10 +4,9 @@
 
    <!-- - Base -->
    <!-- - Header -->
+<!-- -  Hamburger menu? -->
 
--  Hamburger menu?
-
-2. Pages
+## Pages
 
 -  Pagination for pages using JSON file
    <!-- - From front matter -->
@@ -15,39 +14,33 @@
 
 ## Styling and SCSS
 
--  Work on main layout
    <!-- -  Buttons at multiple viewports -->
-      <!-- -  Add in numbered items -->
-      <!-- -  Work on details layout -->
--  Work on navigation layout
--  Add in some transition smoothing
--  Check where to add class in CSS for accents
-
-## JS
+<!-- -  Work on navigation layout -->
 
 UP-NEXT
 
--  Burger menu
+-  Adjust breakpoints to avoid wrapping in tablets?
+-  Text wrapping on bottom flex
+-  How to have link accent pick up custom property
+-  Add in some transition smoothing
 
-   -  Alignment of icon
-   -  Expanded menu content, size positioning
-   -  Change App comment to main content under funcs
-   -  Add comments to focusable/Burger menu
+## JS
 
--  Buttons and content depending on viewport
-   <!-- Inits -->
-   <!-- -  Set all hidden text with JS - content and sources -->
-   <!-- -  Show first item in each array and add active class to button -->
-   <!-- -  Change link to a role of button? -->
-         <!-- App -->
-      <!-- -  Create updateContent function to hide/show as required -->
-      <!-- -  Add comments to all sections -->
-      <!-- -  Refactor for common approach to locate target item in array -->
+Add documentation to JS files
+
+-  Change App comment to main content under funcs
+-  Add comments to focusable/Burger menu
+      <!-- -  Expanded menu content, size positioning -->
+      <!-- -  Alignment of icon -->
+      <!-- Inits -->
+      <!-- -  Set all hidden text with JS - content and sources -->
+      <!-- -  Show first item in each array and add active class to button -->
+      <!-- -  Change link to a role of button? -->
+   <!--          <!-- App -->
 
 # FIXME
 
--  Text wrapping on bottom flex
--  Different text on buttons/viewport
+-  Refactor border code for buttons
 -  Source looks bad if JS fails
    <!-- -  Separator is on top of underline in mobile view -->
    <!-- -  Border causing jank on mobile links, and impacted by border radius -->

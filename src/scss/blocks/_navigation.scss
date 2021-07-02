@@ -1,153 +1,220 @@
-/* 	Navigation
-   	================================================== */
+/*  Navigation
+    ================================================== */
 .site-head__inner {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	gap: 2rem;
-	color: var(--clr-neutral-100);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--clr-neutral-100);
 
-	@include respond-to("large") {
-		flex-direction: row;
-	}
+  @include respond-to("medium") {
+    flex-direction: column;
+  }
 
-	> a {
-		font-family: var(--ff-headers);
-		font-size: var(--step-1);
-	}
+  @include respond-to("large") {
+    flex-direction: row;
+  }
 
-	a {
-		color: var(--clr-neutral-100);
-	}
+  > .site-name {
+    font-family: var(--ff-headers);
+    font-size: var(--step-1);
+  }
 
-	burger-menu .navigation ul {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 1.5rem;
-	}
+  a {
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--clr-neutral-100);
+  }
+
+  burger-menu .navigation ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    a {
+      padding-top: 1.75rem;
+      padding-bottom: 1.75rem;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+    }
+
+    a[aria-current],
+    a:hover {
+      border-bottom: 3px solid var(--accent, red);
+    }
+
+    @include respond-to("large") {
+      a[aria-current],
+      a:hover {
+        border-top: 3px solid var(--accent, red);
+        border-bottom: 3px solid transparent;
+      }
+    }
+  }
 }
 
 /* Burger menu
-	 ================================================== */
+   ================================================== */
 
 /* Hamburger button creation */
 .burger-menu__trigger {
-	display: none;
+  display: none;
 }
 
 .burger-menu__bar,
 .burger-menu__bar::before,
 .burger-menu__bar::after {
-	position: absolute;
-	left: 50%;
-	display: block;
-	width: 24px;
-	height: 3px;
-	border: 1px solid var(--clr-neutral-500);
-	border-radius: 3px;
-	margin-left: -12px;
-	background: var(--clr-neutral-500);
-	transition: transform 100ms ease-in-out;
+  position: absolute;
+  display: block;
+  left: 50%;
+  width: 24px;
+  height: 3px;
+  border: 1px solid var(--clr-neutral-100);
+  border-radius: 3px;
+  margin-left: -12px;
+  background: var(--clr-neutral-100);
+  transition: transform 100ms ease-in-out;
 }
 
 .burger-menu__bar {
-	top: 50%;
-	transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .burger-menu__bar::before,
 .burger-menu__bar::after {
-	content: "";
+  content: "";
 }
 
 .burger-menu__bar::before {
-	top: -8px;
+  top: -8px;
 }
 
 .burger-menu__bar::after {
-	bottom: -8px;
+  bottom: -8px;
 }
 
 // Hamburger button size and positioning
 .burger-menu[enabled="true"] .burger-menu__trigger {
-	position: relative;
-	left: calc(100% - 2rem);
-	z-index: 10;
-	display: block;
-	width: 2rem;
-	height: 2rem;
-	border: none;
-	background: transparent;
-	cursor: pointer;
+  position: relative;
+  z-index: 10;
+  display: block;
+  left: calc(100% - 2rem);
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
 // CHECK: Check if need to disable scroll or not?
 // Hamburger menu panel size and positioning
 .burger-menu[enabled="true"] .burger-menu__panel {
-	position: absolute;
-	top: 5rem;
-	left: 0;
-	visibility: hidden;
-	opacity: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	padding-top: 2rem;
-	padding-right: clamp(1rem, 5%, 4rem);
-	padding-left: clamp(1rem, 5%, 4rem);
-	overflow-y: auto;
-	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0));
-	-webkit-overflow-scrolling: touch;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  top: 4.5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-top: 1px solid var(--clr-neutral-200);
+  overflow-y: auto;
+  background: var(--clr-neutral-400);
+  -webkit-overflow-scrolling: touch;
 }
 
 // Hamburger menu panel contents size and positioning
 .burger-menu[enabled="true"] .navigation {
-	padding: 2rem;
-	border-radius: 0.25em;
-	box-shadow: 0 10px 40px var(--clr-neutral-400);
-	background-color: var(--clr-neutral-100);
+  // padding: 2rem;
+  // border-radius: 0.25em;
+  // background-color: var(--clr-neutral-100);
 
-	> ul {
-		flex-direction: column;
-		font-weight: 700;
-	}
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    font-weight: 700;
 
-	a:not(.cta):hover::before {
-		bottom: -0.75rem;
-	}
+    li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid var(--clr-neutral-300);
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 1em;
+      background-color: var(--accent, var(--clr-neutral-300));
+      transform: translateY(-20%);
+    }
+
+    li::after {
+      content: url("./../../images/icon-chevron.svg");
+      position: absolute;
+      left: calc(100% - 2rem);
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 1em;
+      transform: translateY(-20%);
+      color: var(--clr-neutral-300);
+    }
+  }
+
+  a {
+    flex-grow: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    text-align: left;
+  }
 }
+
 // Hamburger menu panel transitions
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel {
-	visibility: visible;
-	opacity: 1;
-	transition: opacity 100ms ease;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 100ms ease;
 }
 
 .burger-menu[enabled="true"][status="closed"] .burger-menu__panel > * {
-	opacity: 0;
+  opacity: 0;
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel > * {
-	opacity: 1;
+  opacity: 1;
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::before {
-	top: 0;
-	transform: rotate(45deg);
+  top: 0;
+  transform: rotate(45deg);
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::after {
-	top: 0;
-	transform: rotate(-45deg);
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar {
-	border-color: transparent;
-	background: transparent;
-	transform: rotate(90deg);
+  border-color: transparent;
+  background: transparent;
+  transform: rotate(90deg);
 }
