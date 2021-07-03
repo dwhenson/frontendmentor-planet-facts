@@ -61,6 +61,13 @@ a {
   }
 }
 
+:hover {
+  /* prettier-ignore */
+  transition:
+    background-color 200ms linear,
+    border 200ms linear;
+}
+
 /* ==================================================
   Utilities
   ================================================== */

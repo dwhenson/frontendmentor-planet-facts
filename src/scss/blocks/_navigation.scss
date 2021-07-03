@@ -46,13 +46,13 @@
 
     a[aria-current],
     a:hover {
-      border-bottom: 3px solid var(--accent, red);
+      border-bottom: 3px solid var(--accent, var(--clr-neutral-300));
     }
 
     @include respond-to("large") {
       a[aria-current],
       a:hover {
-        border-top: 3px solid var(--accent, red);
+        border-top: 3px solid var(--accent, var(--clr-neutral-300));
         border-bottom: 3px solid transparent;
       }
     }
