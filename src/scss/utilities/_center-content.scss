@@ -1,11 +1,20 @@
 /* Center main content on page */
-$min: 1rem;
-$max: 1440px;
+:root {
+	--min: 1rem;
+	--max: 1440px;
+}
 
 .center-content {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	grid-template-columns: minmax($min, 1fr) minmax($min, $max) minmax($min, 1fr);
+	grid-template-columns: minmax(var(--min), 1fr) minmax(var(--min), var(--max)) minmax(
+			var(--min),
+			1fr
+		);
+
+	@include respond-to("medium") {
+		--min: 2rem;
+	}
 
 	& > * {
 		grid-column: 2;

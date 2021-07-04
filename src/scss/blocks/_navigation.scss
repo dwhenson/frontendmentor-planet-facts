@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+  border-bottom: 1px solid var(--clr-neutral-300);
   color: var(--clr-neutral-100);
 
   @include respond-to("medium") {
@@ -18,8 +18,18 @@
   }
 
   > .site-name {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-family: var(--ff-headers);
     font-size: var(--step-1);
+
+    @include respond-to("medium") {
+      margin-bottom: 0;
+    }
+
+    @include respond-to("large") {
+      margin-top: 0;
+    }
   }
 
   a {

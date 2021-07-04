@@ -2,6 +2,10 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 
+  @include respond-to("medium") {
+    margin-top: 5rem;
+  }
+
   div {
     flex: 1;
     padding: 0.25rem 1rem;
