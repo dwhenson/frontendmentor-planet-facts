@@ -6,16 +6,19 @@
    <!-- - From front matter -->
    <!-- - Create planet collection -->
 
-## Styling and SCSS
+## HTML
 
-<!-- -  Buttons at multiple viewports -->
-<!-- -  Work on navigation layout -->
-<!-- -  Adjust breakpoints to avoid wrapping in tablets? -->
-<!-- -  Text wrapping on bottom flex -->
-<!-- -  How to have link accent pick up custom property -->
-<!-- -  Add in some transition smoothing -->
+-  Try refactoring button list to dl/dt/dd
+
+## SCSS
 
 -  Refactor SCSS to use extends
+   <!-- -  Buttons at multiple viewports -->
+   <!-- -  Work on navigation layout -->
+   <!-- -  Adjust breakpoints to avoid wrapping in tablets? -->
+   <!-- -  Text wrapping on bottom flex -->
+   <!-- -  How to have link accent pick up custom property -->
+   <!-- -  Add in some transition smoothing -->
 
 ## JS
 
@@ -35,10 +38,14 @@ UP-NEXT
 
 -  Source looks bad if JS fails
 -  CSS show last .content if previous:not(target)
--  Double check style in head - is this the best place? Or Lower??
 -  Check with screen reader
-   <!-- -  Separator is on top of underline in mobile view -->
-   <!-- -  Border causing jank on mobile links, and impacted by border radius -->
+-  Do a big refactor
+   -  Check all SCSS files used
+   -  Check repetitive CSS => @extends or utility class
+   -  Check JS structure
+      <!-- -  Double check style in head - is this the best place? Or Lower?? -->
+            <!-- -  Separator is on top of underline in mobile view -->
+            <!-- -  Border causing jank on mobile links, and impacted by border radius -->
 
 # ReadMe
 
