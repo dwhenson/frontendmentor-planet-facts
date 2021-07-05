@@ -12,6 +12,7 @@
 
 ## SCSS
 
+-  Add psudeo element after source
 -  Refactor SCSS to use extends
    <!-- -  Make nav bottom border span entire screen width -->
       <!-- -  Buttons at multiple viewports -->
