@@ -5,7 +5,7 @@
       <a href="#overview"><h2>Overview</h2></a>
     </li>
     <li class="h2" data-button="structure">
-      <a href="#structure"><h2>Structure</h2></a>
+      <a href="#structure"><h2><span class="large-screens">Internal</span> Structure</h2></a>
     </li>
     <li class="h2" data-button="geology">
       <a href="#geology"><h2>Surface</h2></a>
@@ -22,7 +22,9 @@
       <a class="source" data-source="geology" aria-label="Wikipedia {{ title }} geology" href="{{ geology.source }}">Wikipedia</a>
     </p>
   </div>
-  <img data-image="overview" src="{{ images.planet }}" alt="{{ title }}" />
-  <img data-image="structure" src="{{ images.internal }}" alt="{{ title }}" />
-  <img data-image="geology" src="{{ images.geology }}" alt="{{ title }}" />
+  <div class="images">
+    <img data-image="overview" src="{{ images.planet }}" alt="{{ title }}" />
+    <img data-image="structure" src="{{ images.structure }}" alt="{{ title }} structure" />
+    <img data-image="geology" src="{{ images.geology }}" alt="{{ title }} surface" />
+  </div>
 </section>

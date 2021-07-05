@@ -1,7 +1,8 @@
-import { contents, buttons, sources } from "../utils/elements.js";
+import { contents, buttons, sources, images } from "../utils/elements.js";
 import { updateButtons } from "../lib/highlight-button.js";
 import { updateContent } from "../lib/update-content.js";
 import { updateSources } from "../lib/update-source.js";
+import { updateImage } from "../lib/update-image.js";
 
 /* ====================================================
    Handler Functions
@@ -18,4 +19,5 @@ export function handleClicks(event) {
    updateButtons(event, buttons);
    updateContent(event, contents);
    updateSources(event, sources);
+   updateImage(event, images);
 }

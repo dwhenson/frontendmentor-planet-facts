@@ -29,6 +29,10 @@
       grid-area: 1 / 1 / -1/ -1;
       place-self: center;
     }
+
+    img[data-image="geology"] {
+      margin-top: 30rem;
+    }
   }
 
   @include respond-to("medium") {

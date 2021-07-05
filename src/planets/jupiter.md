@@ -21,6 +21,6 @@ temperature: "-108°c"
 
 images:
   planet: "../../images/planet-jupiter.svg"
-  internal: "../../images/planet-jupiter-internal.svg"
-  geology: ".././images/geology-jupiter.png"
+  structure: "../../images/planet-jupiter-internal.svg"
+  geology: "../../images/geology-jupiter.png"
 ---

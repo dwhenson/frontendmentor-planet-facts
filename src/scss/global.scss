@@ -9,6 +9,7 @@
 /* Base Styles
    ================================================== */
 body {
+  height: 100vh;
   background-color: var(--clr-neutral-400);
   background-image: url("../images/background-stars.svg");
   font-family: var(--ff-body);
