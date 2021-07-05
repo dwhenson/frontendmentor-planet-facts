@@ -8,21 +8,20 @@
 
 ## HTML
 
--  Try refactoring button list to dl/dt/dd
+<!-- -  Try refactoring button list to dl/dt/dd -->
 
 ## SCSS
 
 -  Refactor SCSS to use extends
-   <!-- -  Buttons at multiple viewports -->
-   <!-- -  Work on navigation layout -->
-   <!-- -  Adjust breakpoints to avoid wrapping in tablets? -->
-   <!-- -  Text wrapping on bottom flex -->
-   <!-- -  How to have link accent pick up custom property -->
-   <!-- -  Add in some transition smoothing -->
+   <!-- -  Make nav bottom border span entire screen width -->
+      <!-- -  Buttons at multiple viewports -->
+      <!-- -  Work on navigation layout -->
+      <!-- -  Adjust breakpoints to avoid wrapping in tablets? -->
+      <!-- -  Text wrapping on bottom flex -->
+      <!-- -  How to have link accent pick up custom property -->
+      <!-- -  Add in some transition smoothing -->
 
 ## JS
-
-UP-NEXT
 
 -  Deal with additional images
 -  Sort structure and order in JS files
