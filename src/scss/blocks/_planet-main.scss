@@ -31,7 +31,18 @@
     }
 
     img[data-image="geology"] {
-      margin-top: 30rem;
+      position: relative;
+      top: 25%;
+      max-width: 15rem;
+
+      @include respond-to("medium") {
+        max-width: 17.5rem;
+      }
+
+      @include respond-to("large") {
+        top: 20%;
+        max-width: 20rem;
+      }
     }
   }
 

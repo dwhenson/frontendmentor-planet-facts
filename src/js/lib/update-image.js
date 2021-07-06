@@ -8,6 +8,9 @@ export function updateImage(event, array) {
     const showImage = array.find((item) => {
       return item.dataset.image === "geology";
     });
+    if (showImage.style.visibility === "visible") {
+      showImage.style.visibility = "hidden";
+    }
     showImage.style.visibility = "visible";
     return;
   }

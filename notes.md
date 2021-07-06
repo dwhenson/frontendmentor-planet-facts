@@ -13,7 +13,6 @@
 ## SCSS
 
 -  Add psudeo element after source
--  Refactor SCSS to use extends
    <!-- -  Make nav bottom border span entire screen width -->
       <!-- -  Buttons at multiple viewports -->
       <!-- -  Work on navigation layout -->
@@ -24,22 +23,24 @@
 
 ## JS
 
--  Deal with additional images
--  Sort structure and order in JS files
 -  Add comments to focusable/Burger menu, and check in compiled
-   <!-- -  Expanded menu content, size positioning -->
-   <!-- -  Alignment of icon -->
-   <!-- Inits -->
-   <!-- -  Set all hidden text with JS - content and sources -->
-   <!-- -  Show first item in each array and add active class to button -->
-   <!-- -  Change link to a role of button? -->
+   <!-- -  Deal with additional images -->
+   <!-- -  Sort structure and order in JS files -->
+      <!-- -  Expanded menu content, size positioning -->
+      <!-- -  Alignment of icon -->
+      <!-- Inits -->
+      <!-- -  Set all hidden text with JS - content and sources -->
+      <!-- -  Show first item in each array and add active class to button -->
+      <!-- -  Change link to a role of button? -->
 
 # FIXME
 
+-  Body is now larger than 100vh - change geology to relative and adjust?
 -  Source looks bad if JS fails
 -  CSS show last .content if previous:not(target)
 -  Check with screen reader
--  Do a big refactor
+-  Refactor SCSS to use extends
+-  Refactor JS to remove function repetition
    -  Check all SCSS files used
    -  Check repetitive CSS => @extends or utility class
    -  Check JS structure
