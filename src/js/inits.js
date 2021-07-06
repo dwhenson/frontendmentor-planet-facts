@@ -2,10 +2,6 @@ import { handleClicks } from "./handlers/event-handlers.js";
 import { contents, buttons, sources, images } from "./utils/elements.js";
 import BurgerMenu from "./lib/burger-menu.js";
 
-/* ====================================================
-   Inits and Event Listeners
-   ==================================================== */
-
 /**
  * Shows the initial content for the main section
  */

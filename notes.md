@@ -12,26 +12,26 @@
 
 ## SCSS
 
--  Add psudeo element after source
+   <!-- -  Add psudeo element after source -->
    <!-- -  Make nav bottom border span entire screen width -->
-      <!-- -  Buttons at multiple viewports -->
-      <!-- -  Work on navigation layout -->
-      <!-- -  Adjust breakpoints to avoid wrapping in tablets? -->
-      <!-- -  Text wrapping on bottom flex -->
-      <!-- -  How to have link accent pick up custom property -->
-      <!-- -  Add in some transition smoothing -->
+   <!-- -  Buttons at multiple viewports -->
+   <!-- -  Work on navigation layout -->
+   <!-- -  Adjust breakpoints to avoid wrapping in tablets? -->
+   <!-- -  Text wrapping on bottom flex -->
+   <!-- -  How to have link accent pick up custom property -->
+   <!-- -  Add in some transition smoothing -->
 
 ## JS
 
--  Add comments to focusable/Burger menu, and check in compiled
+<!-- -  Add comments to focusable/Burger menu, and check in compiled -->
    <!-- -  Deal with additional images -->
    <!-- -  Sort structure and order in JS files -->
-      <!-- -  Expanded menu content, size positioning -->
-      <!-- -  Alignment of icon -->
-      <!-- Inits -->
-      <!-- -  Set all hidden text with JS - content and sources -->
-      <!-- -  Show first item in each array and add active class to button -->
-      <!-- -  Change link to a role of button? -->
+ <!-- -  Expanded menu content, size positioning -->
+ <!-- -  Alignment of icon -->
+ <!-- Inits -->
+ <!-- -  Set all hidden text with JS - content and sources -->
+ <!-- -  Show first item in each array and add active class to button -->
+ <!-- -  Change link to a role of button? -->
 
 # FIXME
 
@@ -39,11 +39,10 @@
 -  Source looks bad if JS fails
 -  CSS show last .content if previous:not(target)
 -  Check with screen reader
--  Refactor SCSS to use extends
--  Refactor JS to remove function repetition
+-  Refactor
+   -  JS to remove function repetition
    -  Check all SCSS files used
    -  Check repetitive CSS => @extends or utility class
-   -  Check JS structure
       <!-- -  Double check style in head - is this the best place? Or Lower?? -->
             <!-- -  Separator is on top of underline in mobile view -->
             <!-- -  Border causing jank on mobile links, and impacted by border radius -->

@@ -4,11 +4,6 @@ import { updateContent } from "../lib/update-content.js";
 import { updateSources } from "../lib/update-source.js";
 import { updateImage } from "../lib/update-image.js";
 
-/* ====================================================
-   Handler Functions
-   ==================================================== */
-/* Content updates and associated UI changes
-/* ==================================================== */
 /**
  * Call functions to render the UI updates
  * @param      {<type>}  event   The event

@@ -1,10 +1,12 @@
 /**
  * Updates the image based on the button clicked
  * @param      {event}  event   The event
- * @param      {array}  array   The array of content items
+ * @param      {array}  array   The array of images
  */
 export function updateImage(event, array) {
+  // If the geology button is clicked
   if (event.target.closest("[data-button='geology']")) {
+    // Get the image, hide/show and return
     const showImage = array.find((item) => {
       return item.dataset.image === "geology";
     });
@@ -14,15 +16,13 @@ export function updateImage(event, array) {
     showImage.style.visibility = "visible";
     return;
   }
-
-  // Hide all the items in the array
+  // Otherwise, hide all the items in the array
   array.forEach(function (item) {
     if (item.style.visibility === "visible") {
       item.style.visibility = "hidden";
     }
   });
-
-  // Return and show the relevant link
+  // Return and show the relevant image
   const imageToShow = array.find((item) => {
     return item.dataset.image === event.target.closest("[data-button]").dataset.button;
   });
