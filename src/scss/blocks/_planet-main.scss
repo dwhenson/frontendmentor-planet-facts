@@ -25,9 +25,13 @@
     grid-row: 2;
 
     img {
-      visibility: hidden;
       grid-area: 1 / 1 / -1/ -1;
       place-self: center;
+      margin-top: 1rem;
+    }
+
+    img:not(:first-of-type) {
+      visibility: hidden;
     }
 
     img[data-image="geology"] {
@@ -97,16 +101,8 @@
   display: grid;
   gap: 1rem;
 
-  > .content {
-    visibility: hidden;
-    grid-area: 1 / 1 / 2 / -1;
-  }
-
-  /* Fall back in case JS fails */
-  > .content:target {
-    visibility: visible;
-  }
-
+  // Only visable if JS loads
+  .sources,
   .source {
     display: none;
   }
@@ -122,5 +118,15 @@
     background-image: url(../../images/icon-source.svg);
     background-size: 1em 1em;
     background-repeat: no-repeat;
+  }
+
+  > .content {
+    visibility: hidden;
+    grid-area: 1 / 1 / 2 / -1;
+  }
+
+  /* Fall back in case JS fails */
+  > .content:target {
+    visibility: visible;
   }
 }

@@ -48,8 +48,8 @@
 
     @include respond-to("medium") {
       display: inline-block;
-      width: 90%;
       padding-left: 1em;
+      padding-right: 1em;
     }
   }
 

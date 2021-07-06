@@ -35,9 +35,11 @@
 
 # FIXME
 
--  Body is now larger than 100vh - change geology to relative and adjust?
--  Source looks bad if JS fails
--  CSS show last .content if previous:not(target)
+<!-- -  Body is now larger than 100vh - change geology to relative and adjust? -->
+
+<!-- -  Source looks bad if JS fails -->
+<!-- -  CSS show last .content if previous:not(target) -->
+
 -  Check with screen reader
 -  Refactor
    -  JS to remove function repetition
@@ -65,4 +67,4 @@ Progressive Enhancement
 -  No CSS - use target element as backup
 -  No JS
    -  Burger menu
-   -  Showing content - is last .content possible, first would be better
+   -  Showing content - would have liked to render some initial text

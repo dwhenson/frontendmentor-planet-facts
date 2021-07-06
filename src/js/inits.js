@@ -1,11 +1,12 @@
 import { handleClicks } from "./handlers/event-handlers.js";
-import { contents, buttons, sources, images } from "./utils/elements.js";
+import { sourcesParent, contents, buttons, sources, images } from "./utils/elements.js";
 import BurgerMenu from "./lib/burger-menu.js";
 
 /**
  * Shows the initial content for the main section
  */
 function showInitialContent() {
+   sourcesParent.style.display = "block";
    contents[0].style.visibility = "visible";
    buttons[0].classList.add("js-active");
    sources[0].style.display = "inline";
