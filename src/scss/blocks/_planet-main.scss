@@ -110,4 +110,17 @@
   .source {
     display: none;
   }
+
+  .source::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    top: 4px;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.5em;
+    background-image: url(../../images/icon-source.svg);
+    background-size: 1em 1em;
+    background-repeat: no-repeat;
+  }
 }
