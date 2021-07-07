@@ -30,7 +30,7 @@
 	white-space: nowrap;
 }
 
-/* Remove necessary focus style as main is the :target */
 main:focus {
+	/* Remove necessary focus style as main is the :target */
 	outline: none;
 }

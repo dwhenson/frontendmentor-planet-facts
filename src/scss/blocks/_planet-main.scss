@@ -1,3 +1,5 @@
+/*   Main planet section
+     ================================================== */
 .planet {
   display: grid;
   grid-template-rows: auto 1fr auto auto;
@@ -11,41 +13,12 @@
       flex-grow: 0;
     }
 
+    // Adjust link text content
     .large-screens {
       display: none;
 
       @include respond-to("medium") {
         display: inline;
-      }
-    }
-  }
-
-  .images {
-    display: grid;
-    grid-row: 2;
-
-    img {
-      grid-area: 1 / 1 / -1/ -1;
-      place-self: center;
-      margin-top: 1rem;
-    }
-
-    img:not(:first-of-type) {
-      visibility: hidden;
-    }
-
-    img[data-image="geology"] {
-      position: relative;
-      top: 25%;
-      max-width: 15rem;
-
-      @include respond-to("medium") {
-        max-width: 17.5rem;
-      }
-
-      @include respond-to("large") {
-        top: 20%;
-        max-width: 20rem;
       }
     }
   }
@@ -97,11 +70,45 @@
   }
 }
 
+/* Planet images
+   ------------------- */
+.images {
+  display: grid;
+  grid-row: 2;
+
+  img {
+    grid-area: 1 / 1 / -1/ -1;
+    place-self: center;
+    margin-top: 1rem;
+
+    &:not(:first-of-type) {
+      visibility: hidden;
+    }
+  }
+
+  [data-image="geology"] {
+    position: relative;
+    top: 25%;
+    max-width: 15rem;
+
+    @include respond-to("medium") {
+      max-width: 17.5rem;
+    }
+
+    @include respond-to("large") {
+      top: 20%;
+      max-width: 20rem;
+    }
+  }
+}
+
+/* Planet text
+   ------------------- */
 .contents {
   display: grid;
   gap: 1rem;
 
-  // Only visable if JS loads
+  // Invisible unless JS loads
   .sources,
   .source {
     display: none;
@@ -121,11 +128,14 @@
   }
 
   > .content {
-    visibility: hidden;
-    grid-area: 1 / 1 / 2 / -1;
+    grid-area: 1 / 1 / -1 / -1;
   }
 
   /* Fall back in case JS fails */
+  > .content {
+    visibility: hidden;
+  }
+
   > .content:target {
     visibility: visible;
   }
