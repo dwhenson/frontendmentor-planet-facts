@@ -3,6 +3,7 @@
 .planet {
   display: grid;
   grid-template-rows: auto 1fr auto auto;
+  grid-template-columns: 100%;
   gap: 2rem 3rem;
   height: 100%;
 
