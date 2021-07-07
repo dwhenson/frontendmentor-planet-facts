@@ -1,7 +1,5 @@
 # Frontend Mentor - Planets fact site
 
-![Design preview for the Planets fact site coding challenge](./preview.jpg)
-
 ## The challenge
 
 Your challenge is to build out this 8-page planets fact site and get it looking as close to the design as possible. Your users should be able to:
