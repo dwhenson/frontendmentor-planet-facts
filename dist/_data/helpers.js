@@ -1,0 +1,2 @@
+var helpers=function(){"use strict";return{getLinkActiveState(t,e){let r="";return t===e&&(r=' aria-current="page"'),t.length>1&&0===e.indexOf(t)&&(r+=' data-state="active"'),r}}}();
+//# sourceMappingURL=helpers.js.map

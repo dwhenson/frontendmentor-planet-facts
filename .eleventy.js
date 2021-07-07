@@ -1,5 +1,5 @@
 module.exports = (config) => {
-  config.addPassthroughCopy("./src/images/");
+  // config.addPassthroughCopy("./src/images/");
 
   // Disable browsersync
   config.setBrowserSyncConfig({
