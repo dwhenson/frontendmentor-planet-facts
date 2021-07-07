@@ -3,53 +3,14 @@
 ## Structure and 11ty
 
 -  Pagination for pages using JSON file
-   <!-- - From front matter -->
-   <!-- - Create planet collection -->
 
-## HTML
+## FIXME
 
-<!-- -  Try refactoring button list to dl/dt/dd -->
+-  Render all images either through markdown or 11ty and pagination
 
-## SCSS
+# README
 
-   <!-- -  Add psudeo element after source -->
-   <!-- -  Make nav bottom border span entire screen width -->
-   <!-- -  Buttons at multiple viewports -->
-   <!-- -  Work on navigation layout -->
-   <!-- -  Adjust breakpoints to avoid wrapping in tablets? -->
-   <!-- -  Text wrapping on bottom flex -->
-   <!-- -  How to have link accent pick up custom property -->
-   <!-- -  Add in some transition smoothing -->
-
-## JS
-
-<!-- -  Add comments to focusable/Burger menu, and check in compiled -->
-   <!-- -  Deal with additional images -->
-   <!-- -  Sort structure and order in JS files -->
- <!-- -  Expanded menu content, size positioning -->
- <!-- -  Alignment of icon -->
- <!-- Inits -->
- <!-- -  Set all hidden text with JS - content and sources -->
- <!-- -  Show first item in each array and add active class to button -->
- <!-- -  Change link to a role of button? -->
-
-# FIXME
-
-<!-- -  Body is now larger than 100vh - change geology to relative and adjust? -->
-
-<!-- -  Source looks bad if JS fails -->
-<!-- -  CSS show last .content if previous:not(target) -->
-
--  Check with screen reader
--  Refactor
-   -  JS to remove function repetition
-   -  Check all SCSS files used
-   -  Check repetitive CSS => @extends or utility class
-      <!-- -  Double check style in head - is this the best place? Or Lower?? -->
-            <!-- -  Separator is on top of underline in mobile view -->
-            <!-- -  Border causing jank on mobile links, and impacted by border radius -->
-
-# ReadMe
+## Key points
 
 1. Many pages so some form of templating needed - SSG 11ty and nunjucks. AB 11ty course with some other additions
    -  Nav menu with JS helper
@@ -58,13 +19,15 @@
 3. Center section layout was a challenge, wanted to keep source and tab order logical. Concluded a tabbed interface not any more? Tried/Failed with CSS
 4. Setting a custom property in the document head using nunjunks - is that a good idea? Use inline styling to use the cascade to apply different accents underneath to each `li`
 
-A11y
+## A11y
 
--  Source code order and tab order - a bit contradictory
+-  Source code order and tab order - a bit contradictory - but the details in a list inside the `aside` mainly as it has a built in landmark and seemed more appropriate than `footer`
+-  Would have liked to have the links in the buttons fill content so outline styles better
+   -  Possible solution with JS, but if JS fails have links that are not keyboard focusable, have to set attributes in JS on init - seemed like a downward spiral...
 
-Progressive Enhancement
+## Progressive Enhancement
 
--  No CSS - use target element as backup
+-  No CSS - not ideal as headers and content are separate but works, just about.
 -  No JS
    -  Burger menu
-   -  Showing content - would have liked to render some initial text
+   -  Showing content - would have liked to render some initial text cannot make it work no matter what combination of selectors I tried!
