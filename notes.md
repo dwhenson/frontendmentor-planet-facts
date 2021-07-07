@@ -7,6 +7,8 @@
 ## FIXME
 
 -  Render all images either through markdown or 11ty and pagination
+   <!-- -  Put surface image back in flow to prevent overflow -->
+   <!-- -  Work on nav panel when open - 100vh? And no scroll? -->
 
 # README
 

@@ -107,4 +107,5 @@ Thumbs.db
 
 # 11ty
 src/_includes/css
+dist
 
