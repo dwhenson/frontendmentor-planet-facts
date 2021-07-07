@@ -14,5 +14,5 @@ function showInitialContent() {
 }
 
 // Inits
-document.addEventListener("click", handleClicks);
 showInitialContent();
+document.addEventListener("click", handleClicks);
