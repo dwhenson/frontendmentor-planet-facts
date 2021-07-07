@@ -29,6 +29,6 @@ temperature: "-195°c"
 
 images:
   planet: "../../images/planet-uranus.svg"
-  internal: "../../images/planet-uranus-internal.svg"
+  structure: "../../images/planet-uranus-internal.svg"
   geology: "../../images/geology-uranus.png"
 ---

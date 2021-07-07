@@ -30,6 +30,6 @@ temperature: "-28°c"
 
 images:
   planet: "../../images/planet-mars.svg"
-  internal: "../../images/planet-mars-internal.svg"
+  structure: "../../images/planet-mars-internal.svg"
   geology: "../../images/geology-mars.png"
 ---

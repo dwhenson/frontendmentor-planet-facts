@@ -31,6 +31,6 @@ temperature: "-138°c"
 
 images:
   planet: "../../images/planet-saturn.svg"
-  internal: "../../images/planet-saturn-internal.svg"
+  structure: "../../images/planet-saturn-internal.svg"
   geology: "../../images/geology-saturn.png"
 ---

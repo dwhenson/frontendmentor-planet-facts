@@ -30,6 +30,6 @@ temperature: "-201°c"
 
 images:
   planet: "../../images/planet-neptune.svg"
-  internal: "../../images/planet-neptune-internal.svg"
+  structure: "../../images/planet-neptune-internal.svg"
   geology: "../../images/geology-neptune.png"
 ---

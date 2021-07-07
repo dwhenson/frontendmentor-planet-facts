@@ -1,19 +1,31 @@
 <section class="planet" style="--accent: var(--{{ title | lower }});">
-  <h1>{{ title }}</h1>
-  <ol class="[ split-row-to-col ] [ buttons ]" role="list" >
+  <h1>{{ name }}</h1>
+  <ol class="[ split-row-to-col ] [ buttons ]" role="list">
     <li class="h2" data-button="overview">
-      <a href="#overview"><h2>Overview</h2></a>
+      <a href="#overview">
+        <h2>Overview</h2>
+      </a>
     </li>
     <li class="h2" data-button="structure">
-      <a href="#structure"><h2 aria-label="Internal Structure"><span class="large-screens" aria-hidden="true">Internal</span> Structure</h2></a>
+      <a href="#structure">
+        <h2 aria-label="Internal Structure">
+          <span class="large-screens" aria-hidden="true">Internal</span> Structure
+        </h2>
+      </a>
     </li>
     <li class="h2" data-button="geology">
-      <a href="#geology"><h2>Surface</h2></a>
+      <a href="#geology">
+        <h2>Surface</h2>
+      </a>
     </li>
   </ol>
   <div class="contents">
-    <p id="overview" class="content" data-content="overview">{{ overview.content }}</p>
-    <p id="structure" class="content" data-content="structure">{{ structure.content }}</p>
+    <p id="overview" class="content" data-content="overview">
+      {{ overview.content }}
+    </p>
+    <p id="structure" class="content" data-content="structure">
+      {{ structure.content }}
+    </p>
     <p id="geology" class="content" data-content="geology">{{ geology.content }}</p>
     <p class="sources">
       Source&nbsp;&nbsp;:&nbsp;&nbsp;
@@ -29,8 +41,16 @@
     </p>
   </div>
   <div class="images">
-    <img data-image="overview" src="{{ images.planet }}" alt="{{ title }}" />
-    <img data-image="structure" src="{{ images.structure }}" alt="{{ title }} structure" />
-    <img data-image="geology" src="{{ images.geology }}" alt="{{ title }} surface" />
+    <img data-image="overview" src="{{ images.planet }}" alt="{{ name }}" />
+    <img
+      data-image="structure"
+      src="{{ images.structure }}"
+      alt="{{ name }} structure"
+    />
+    <img
+      data-image="geology"
+      src="{{ images.geology }}"
+      alt="{{ name }} surface"
+    />
   </div>
 </section>

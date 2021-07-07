@@ -30,6 +30,6 @@ temperature: "471°c"
 
 images:
   planet: "../../images/planet-venus.svg"
-  internal: "../../images/planet-venus-internal.svg"
+  structure: "../../images/planet-venus-internal.svg"
   geology: "../../images/geology-venus.png"
 ---

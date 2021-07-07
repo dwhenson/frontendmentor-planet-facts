@@ -30,6 +30,6 @@ temperature: "16°c"
 
 images:
   planet: "../../images/planet-earth.svg"
-  internal: "../../images/planet-earth-internal.svg"
+  structure: "../../images/planet-earth-internal.svg"
   geology: "../../images/geology-earth.png"
 ---
