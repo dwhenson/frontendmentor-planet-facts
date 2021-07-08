@@ -10,7 +10,7 @@ import { updateImage } from "../lib/update-image.js";
  */
 export function handleClicks(event) {
    if (!event.target.closest("[data-button]")) return;
-   // event.preventDefault();
+   event.preventDefault();
    updateButtons(event, buttons);
    updateContent(event, contents);
    updateSources(event, sources);
