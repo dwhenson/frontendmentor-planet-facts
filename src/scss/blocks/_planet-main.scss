@@ -79,8 +79,13 @@
 
   img {
     grid-area: 1 / 1 / -1/ -1;
-    place-self: center;
+    align-self: top;
+    justify-self: center;
     margin-top: 1rem;
+
+    @include respond-to("medium") {
+      place-self: center;
+    }
 
     &:not(:first-of-type) {
       visibility: hidden;
@@ -89,7 +94,7 @@
 
   [data-image="geology"] {
     max-width: 15rem;
-    margin-top: 20rem;
+    margin-top: 15rem;
 
     @include respond-to("medium") {
       max-width: 17.5rem;
@@ -97,7 +102,6 @@
     }
 
     @include respond-to("large") {
-      max-width: 20rem;
       margin-top: 30rem;
     }
   }
