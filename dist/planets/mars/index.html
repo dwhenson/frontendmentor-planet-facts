@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Mars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/inits.js" defer></script>
+  </head>
+  <body class="center-content">
+    <header role="banner" class=" center-content site-head">
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
+    <div class="site-head__inner">
+      <a href="../../index.html" class="site-name" aria-label="Our Solor System - home">The Planets</a>
+      <burger-menu max-width="790">
+        <nav class="navigation" aria-label="primary">
+          <ul role="list">
+            
+            <li style=" --accent: var(--mercury);">
+              <a
+              href="/planets/mercury/"
+              >
+                Mercury</a>
+            </li>
+            
+            <li style=" --accent: var(--venus);">
+              <a
+              href="/planets/venus/"
+              >
+                Venus</a>
+            </li>
+            
+            <li style=" --accent: var(--earth);">
+              <a
+              href="/planets/earth/"
+              >
+                Earth</a>
+            </li>
+            
+            <li style=" --accent: var(--mars);">
+              <a
+              href="/planets/mars/"
+               aria-current="page">
+                Mars</a>
+            </li>
+            
+            <li style=" --accent: var(--jupiter);">
+              <a
+              href="/planets/jupiter/"
+              >
+                Jupiter</a>
+            </li>
+            
+            <li style=" --accent: var(--saturn);">
+              <a
+              href="/planets/saturn/"
+              >
+                Saturn</a>
+            </li>
+            
+            <li style=" --accent: var(--uranus);">
+              <a
+              href="/planets/uranus/"
+              >
+                Uranus</a>
+            </li>
+            
+            <li style=" --accent: var(--neptune);">
+              <a
+              href="/planets/neptune/"
+              >
+                Neptune</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </burger-menu>
+    </div>
+</header>
+    
+<main tabindex="-1" id="main-content">
+  <section class="planet" style="--accent: var(--mars);">
+  <h1></h1>
+  <ol class="[ split-row-to-col ] [ buttons ]" role="list">
+    <li class="h2" data-button="overview">
+      <a href="#overview">
+        <h2>Overview</h2>
+      </a>
+    </li>
+    <li class="h2" data-button="structure">
+      <a href="#structure">
+        <h2 aria-label="Internal Structure">
+          <span class="large-screens" aria-hidden="true">Internal</span> Structure
+        </h2>
+      </a>
+    </li>
+    <li class="h2" data-button="geology">
+      <a href="#geology">
+        <h2>Surface</h2>
+      </a>
+    </li>
+  </ol>
+  <div class="contents">
+    <p id="overview" class="content" data-content="overview">
+      Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the &quot;Red Planet&quot;.
+    </p>
+    <p id="structure" class="content" data-content="structure">
+      Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.
+    </p>
+    <p id="geology" class="content" data-content="geology">Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.</p>
+    <p class="sources">
+      Source&nbsp;&nbsp;:&nbsp;&nbsp;
+      <a class="source" data-source="overview" href="https://en.wikipedia.org/wiki/Mars">
+        <span class="visually-hidden">Overview </span>Wikipedia
+      </a>
+      <a class="source" data-source="structure" href="https://en.wikipedia.org/wiki/Mars#Internal_structure">
+        <span class="visually-hidden">Structure </span>Wikipedia
+      </a>
+      <a class="source" data-source="geology" href="https://en.wikipedia.org/wiki/Mars#Surface_geology">
+        <span class="visually-hidden">Geology </span>Wikipedia
+      </a>
+    </p>
+  </div>
+  <div class="images">
+    <img data-image="overview" src="../../images/planet-mars.svg" alt="" />
+    <img
+      data-image="structure"
+      src="../../images/planet-mars-internal.svg"
+      alt=" structure"
+    />
+    <img
+      data-image="geology"
+      src="../../images/geology-mars.png"
+      alt=" surface"
+    />
+  </div>
+</section>
+
+</main>
+<aside class="details">
+  <dl class="split-col-to-row" role="list">
+    <div class="split-row-to-col">
+      <dt>Rotation Time</dt>
+      <dd>1.03 Days</dd>
+    </div>
+    <div class="split-row-to-col">
+      <dt>Revolution Time</dt>
+      <dd>1.88 Years</dd>
+    </div>
+    <div class="split-row-to-col">
+      <dt>Radius</dt>
+      <dd>3,389.5 KM</dd>
+    </div>
+    <div class="split-row-to-col">
+      <dt>Average Temp</dt>
+      <dd>-28°c</dd>
+    </div>
+  </dl>
+</aside>
+ 
+
+  </body>
+</html>
+ 
