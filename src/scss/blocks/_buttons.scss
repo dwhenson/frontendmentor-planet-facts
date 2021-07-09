@@ -18,13 +18,9 @@
     border-top: 9px solid transparent;
     border-bottom: 3px solid transparent;
     border-radius: 0.2em;
-    cursor: pointer;
 
     @include respond-to("medium") {
-      padding-left: 1em;
       border: 1px solid var(--clr-neutral-300);
-      list-style-type: decimal-leading-zero;
-      list-style-position: inside;
       color: var(--clr-neutral-200);
     }
 
@@ -40,12 +36,23 @@
 
   a {
     display: block;
+    width: 100%;
     padding: 1.5em 0.25em;
 
     @include respond-to("medium") {
       display: inline-block;
-      padding-left: 1em;
       padding-right: 1em;
+      padding-left: 1em;
+    }
+
+    .number {
+      display: none;
+
+      @include respond-to("medium") {
+        display: inline;
+        padding-right: 1em;
+        color: var(--clr-neutral-300);
+      }
     }
   }
 
