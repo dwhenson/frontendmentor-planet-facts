@@ -14,5 +14,5 @@ export function handleClicks(event) {
    updateButtons(event, buttons);
    updateContent(event, contents);
    updateSources(event, sources);
-   updateImage(event, images);
+   updateImage(event, images, buttons);
 }

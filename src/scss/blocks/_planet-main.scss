@@ -76,12 +76,13 @@
 .images {
   display: grid;
   grid-row: 2;
+  margin-top: 1rem;
 
-  img {
+  img,
+  svg {
     grid-area: 1 / 1 / -1/ -1;
     align-self: top;
     justify-self: center;
-    margin-top: 1rem;
 
     @include respond-to("medium") {
       place-self: center;
@@ -93,6 +94,7 @@
   }
 
   [data-image="geology"] {
+    visibility: hidden;
     max-width: 15rem;
     margin-top: 15rem;
 

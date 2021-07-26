@@ -35,11 +35,11 @@ h3,
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+:where(ul[class]),
+:where(ol[class]) {
   padding-right: 0;
   padding-left: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 /* Set core root defaults */
@@ -648,22 +648,26 @@ main:focus {
 .images {
   display: grid;
   grid-row: 2;
+  margin-top: 1rem;
 }
-.images img {
+.images img,
+.images svg {
   grid-area: 1/1/-1/-1;
   align-self: top;
   justify-self: center;
-  margin-top: 1rem;
 }
 @media (min-width: 50em) {
-  .images img {
+  .images img,
+.images svg {
     place-self: center;
   }
 }
-.images img:not(:first-of-type) {
+.images img:not(:first-of-type),
+.images svg:not(:first-of-type) {
   visibility: hidden;
 }
 .images [data-image=geology] {
+  visibility: hidden;
   max-width: 15rem;
   margin-top: 15rem;
 }

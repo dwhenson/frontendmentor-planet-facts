@@ -1,5 +1,6 @@
 <section class="planet" style="--accent: var(--{{ title | lower }});">
   <h1>{{ title }}</h1>
+
   <ol class="split-row-to-col buttons " role="list">
     <li class="h2" data-button="overview">
       <a href="#overview">
@@ -8,7 +9,7 @@
     </li>
     <li class="h2" data-button="structure">
       <a href="#structure">
-        <h2 aria-label="Internal Structure"><span class="number">02</span> 
+        <h2 aria-label="Internal Structure"><span class="number">02</span>
           <span class="large-screens" aria-hidden="true">Internal</span> Structure
         </h2>
       </a>
@@ -19,6 +20,7 @@
       </a>
     </li>
   </ol>
+
   <div class="contents">
     <p id="overview" class="content" data-content="overview">
       {{ overview.content }}
@@ -40,19 +42,17 @@
       </a>
     </p>
   </div>
+
   <div class="images">
-    <img data-image="overview" src="{{ images.planet }}" alt="{{ name }}" />
-    <img
-      data-image="structure"
-      src="{{ images.structure }}"
-      alt="{{ name }} structure"
-      loading="lazy"
-    />
-    <img
-      data-image="geology"
-      src="{{ images.geology }}"
-      alt="{{ name }} surface"
-      loading="lazy"
-    />
+
+    {% include "partials/images/planet-" + title.toLowerCase() + ".svg" %}
+    {% include "partials/images/planet-" + title.toLowerCase() + "-internal.svg" %}
+
+<img
+  data-image="geology"
+  src="{{ images.geology }}"
+  alt="{{ name }} surface"
+  loading="lazy"
+/>
   </div>
 </section>

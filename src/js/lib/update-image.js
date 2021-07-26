@@ -1,3 +1,5 @@
+import { buttons } from "../utils/elements.js";
+
 /**
  * Updates the image based on the button clicked
  * @param      {event}  event   The event
@@ -22,9 +24,15 @@ export function updateImage(event, array) {
       item.style.visibility = "hidden";
     }
   });
+
+  // Find the index of the button clicked
+  const button = buttons.findIndex((item) => {
+    return item === event.target.closest("[data-button]");
+  });
+
   // Return and show the relevant image
-  const imageToShow = array.find((item) => {
-    return item.dataset.image === event.target.closest("[data-button]").dataset.button;
+  const imageToShow = array.find((item, index) => {
+    return index === button;
   });
   imageToShow.style.visibility = "visible";
 }
