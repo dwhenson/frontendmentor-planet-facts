@@ -29,7 +29,7 @@ export function updateImage(event, array) {
   const button = buttons.findIndex((item) => {
     return item === event.target.closest("[data-button]");
   });
-
+  console.log(event.target);
   // Return and show the relevant image
   const imageToShow = array.find((item, index) => {
     return index === button;

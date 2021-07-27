@@ -1,5 +1,5 @@
-<section class="planet" style="--accent: var(--{{ title | lower }});">
-  <h1>{{ title }}</h1>
+<section class="planet" style="--accent: var(--{{ planet.name | lower }});">
+  <h1>{{ planet.name }}</h1>
 
   <ol class="split-row-to-col buttons " role="list">
     <li class="h2" data-button="overview">
@@ -23,12 +23,12 @@
 
   <div class="contents">
     <p id="overview" class="content" data-content="overview">
-      {{ overview.content }}
+      {{ planet.overview.content }}
     </p>
     <p id="structure" class="content" data-content="structure">
-      {{ structure.content }}
+      {{ planet.structure.content }}
     </p>
-    <p id="geology" class="content" data-content="geology">{{ geology.content }}</p>
+    <p id="geology" class="content" data-content="geology">{{ planet.geology.content }}</p>
     <p class="sources">
       Source&nbsp;&nbsp;:&nbsp;&nbsp;
       <a class="source" data-source="overview" href="{{ overview.source }}">
@@ -44,14 +44,12 @@
   </div>
 
   <div class="images">
-
-    {% include "partials/images/planet-" + title.toLowerCase() + ".svg" %}
-    {% include "partials/images/planet-" + title.toLowerCase() + "-internal.svg" %}
-
-<img
+{% include "partials/images/planet-" + planet.name.toLowerCase() + ".svg" %}
+{% include "partials/images/planet-" + planet.name.toLowerCase() + "-internal.svg" %}
+  <img
   data-image="geology"
-  src="{{ images.geology }}"
-  alt="{{ name }} surface"
+  src="{{ planet.images.geology }}"
+  alt="{{ planet.name }} surface"
   loading="lazy"
 />
   </div>
